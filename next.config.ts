@@ -1,6 +1,6 @@
 import type { NextConfig } from "next";
 
-const basePath = "profile"
+export const basePath = "profile"
 
 const nextConfig: NextConfig = {
   basePath: basePath,
