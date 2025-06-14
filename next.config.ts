@@ -1,7 +1,10 @@
 import type { NextConfig } from "next";
 
+const basePath = "profile"
+
 const nextConfig: NextConfig = {
-  /* config options here */
+  basePath: basePath,
+  assetPrefix: `/${basePath}/`,
 };
 
 export default nextConfig;
