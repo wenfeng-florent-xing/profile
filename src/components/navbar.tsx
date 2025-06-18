@@ -1,39 +1,34 @@
 import {
-    NavigationMenu,
-    NavigationMenuContent,
-    NavigationMenuIndicator,
-    NavigationMenuItem,
-    NavigationMenuLink,
-    NavigationMenuList,
-    NavigationMenuTrigger,
-    NavigationMenuViewport,
-} from "@/components/ui/navigation-menu"
+  NavigationMenu,
+  NavigationMenuIndicator,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuViewport
+} from "@/components/ui/navigation-menu";
 
 export default function Navbar() {
   return (
-    <NavigationMenu className="w-full max-w-3xl pt-4">
-      <NavigationMenuList>
+    <NavigationMenu className="w-full pt-4 pb-4">
+      <NavigationMenuList className="w-full flex justify-between gap-10">
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Home</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <NavigationMenuLink href="/">Home</NavigationMenuLink>
-          </NavigationMenuContent>
+          <NavigationMenuLink href="/">Home</NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>About</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <NavigationMenuLink href="/about">About</NavigationMenuLink>
-          </NavigationMenuContent>
+          <NavigationMenuLink href="/blog">Blog</NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Contact</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <NavigationMenuLink href="/contact">Contact</NavigationMenuLink>
-          </NavigationMenuContent>
+          <NavigationMenuLink href="/projects">Projects</NavigationMenuLink>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <NavigationMenuLink href="/cv">CV</NavigationMenuLink>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <NavigationMenuLink href="/contact">Contact</NavigationMenuLink>
         </NavigationMenuItem>
       </NavigationMenuList>
       <NavigationMenuIndicator />
       <NavigationMenuViewport />
     </NavigationMenu>
-  )
+  );
 }
