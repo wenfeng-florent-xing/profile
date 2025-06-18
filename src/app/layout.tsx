@@ -32,23 +32,23 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
-              <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://github.com/wenfeng-florent-xing"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src={`${basePath}/globe.svg`}
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to my GitHub
-        </a>
-      </footer>
+        <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
+          <a
+            className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+            href="https://github.com/wenfeng-florent-xing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              aria-hidden
+              src={`${basePath}/globe.svg`}
+              alt="Globe icon"
+              width={16}
+              height={16}
+            />
+            Go to my GitHub
+          </a>
+        </footer>
       </body>
     </html>
   );

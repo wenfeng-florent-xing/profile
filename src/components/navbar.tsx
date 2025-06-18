@@ -9,8 +9,8 @@ import {
 
 export default function Navbar() {
   return (
-    <NavigationMenu className="w-full pt-4 pb-4">
-      <NavigationMenuList className="w-full flex justify-between gap-10">
+    <NavigationMenu className="w-full max-w-3xl pt-4 pb-4 h-0">
+      <NavigationMenuList className="w-full">
         <NavigationMenuItem>
           <NavigationMenuLink href="/">Home</NavigationMenuLink>
         </NavigationMenuItem>
